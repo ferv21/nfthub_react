@@ -7,8 +7,12 @@ import NftExplore from "../components/NftExplore"
 import NftCreate from "../components/NftCreate"
 import Hero from "../components/Hero"
 import TopCollections from "../components/TopCollections"
+import Button from "../components/Button";
+import SlideHero from "../components/SlideHero";
 
 export {
+    SlideHero,
+    Button,
     Artists,
     Contact,
     Collectors,

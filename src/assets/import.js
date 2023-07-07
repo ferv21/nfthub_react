@@ -12,6 +12,7 @@ import NFT10 from '../assets/nft10.jpg';
 
 
 
+
 export {
     NFT1,
     NFT2,

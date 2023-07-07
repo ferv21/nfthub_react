@@ -1,9 +1,13 @@
 import './App.css';
-import Header from './components/Header';
+import { Hero, Header} from "./components/import";
+import {NFT1} from './assets/import'
 
 function App() {
   return (
-    <Header />
+    <>
+      <Header />
+      <Hero />
+    </>
   );
 }
 
