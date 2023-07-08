@@ -1,0 +1,26 @@
+.nft__explore h2{
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+}
+
+.select__options {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:30px;
+}
+
+.select {
+    outline: none;
+    background: transparent;
+    border: 1px solid purple;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 8px;
+    color: #fff;
+}
+
+.nft__cards__sell {
+    margin-top: 60px;
+}

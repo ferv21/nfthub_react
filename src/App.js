@@ -1,12 +1,14 @@
 import './App.css';
-import { Hero, Header} from "./components/import";
-import {NFT1} from './assets/import'
+import { Hero, Header, NftCreate, NftExplore} from "./components/import";
+
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
+      <NftCreate />
+      <NftExplore />
     </>
   );
 }

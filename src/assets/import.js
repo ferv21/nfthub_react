@@ -8,12 +8,14 @@ import NFT7 from '../assets/nft7.jpg';
 import NFT8 from '../assets/nft8.jpg';
 import NFT9 from '../assets/nft9.jpg';
 import NFT10 from '../assets/nft10.jpg';
+import peoples from '../assets/people.png';
 
 
 
 
 
 export {
+    peoples,
     NFT1,
     NFT2,
     NFT3,

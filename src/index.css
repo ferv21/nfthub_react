@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 1480px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
 }
@@ -22,13 +22,14 @@ body {
 }
 
 :root {
-  --text-color:#f5f3fd;
   --bg-color:#120731;
   --purple-color:#21154b;
   --light-purple:#423c8a;
   --morelight-purple:#5b50c7;
   --pink-color:#b040b0;
   --vine-color:#5a1d62;
+  --card-purple:rgba(53,41,89,0.7);
+  --text-color:#fcf8ff;
 }
 
 .btn__gradient {
@@ -42,15 +43,34 @@ body {
 }
 
 .header__gradient{
-  background: radial-gradient(circle at 21% 34%, rgba(94, 25, 78, 1) 0%, rgba(70, 44, 109, 1) 50%);
+  /* background: radial-gradient(circle at 21% 34%, rgba(94, 25, 78, 1) 0%, rgba(70, 44, 109, 1) 50%); */
+  background: radial-gradient(circle at 50% 50%, rgba(191, 68, 207, 1) 0%, rgba(70, 44, 109, 1) 50%);
   filter: blur(100px);
+  position: absolute;
+  top: 0;
+  left: 100px;
+  width: 300px;
+  height: 300px;
+  z-index: -4;
+}
+
+.header__blue_gradient{
+  background: radial-gradient(circle at 50% 50%, rgba(144, 121, 253, 1) 0%, rgba(70, 44, 109, 1) 50%);
+  filter: blur(80px);
+  position: absolute;
+  top: 0;
+  right: 100px;
+  width: 600px;
+  height: 300px;
+  z-index: -2;
 }
 
 .hero__gradient {
   background: radial-gradient(circle at 50% 50%, rgba(43, 113, 154, 1) 0%, rgba(55, 34, 101, 1) 50%, rgba(22, 26, 67, 1) 100%);
-  filter: blur(80px);
+  filter: blur(100px);
   position: absolute;
   z-index: -1;
+  left: 10%;
   width: 80%;
   height: 80%;
   top: 50%;

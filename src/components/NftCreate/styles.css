@@ -1,0 +1,12 @@
+.nftcreates {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.nft__create_title {
+    text-align: center;
+    color: white;
+    font-size: 34px;
+}

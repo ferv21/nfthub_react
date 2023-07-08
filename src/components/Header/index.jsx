@@ -47,6 +47,8 @@ const Header = () => {
                     </div>
                 </div>
             </header>
+            <div className="header__gradient"/>
+            <div className="header__blue_gradient"/>
         </>
     )
 }

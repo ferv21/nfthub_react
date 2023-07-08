@@ -8,7 +8,7 @@
     text-align: center;
     z-index: 5;
     color:white;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     letter-spacing: 10px;
     
@@ -32,7 +32,7 @@
 }
 
 .play-icon a {
-    color: var(--text-color);
+    color: #fff;
     margin-left: 16px;
 }
 

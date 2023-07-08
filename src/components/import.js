@@ -9,8 +9,12 @@ import Hero from "../components/Hero"
 import TopCollections from "../components/TopCollections"
 import Button from "../components/Button";
 import SlideHero from "../components/SlideHero";
+import NftInfoCard from "../components/NftInfoCard";
+import NftSellCard from "../components/NftSellCard";
 
 export {
+    NftSellCard,
+    NftInfoCard,
     SlideHero,
     Button,
     Artists,
