@@ -1,7 +1,6 @@
 .cardimg {
     position: relative;
     max-width: 400px;
-    
 }
 
 .cardimg > img{
@@ -9,6 +8,7 @@
     height: 600px;
     width: 100%;
     border-radius: 18px;
+    cursor: pointer;
 }
 
 .cardimg__content {
@@ -21,3 +21,27 @@
     padding: 16px;
     color:#fff;
 }
+
+.cardimg__content h4 {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.cardimg__content p {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.cardimg__content img {
+    height: 32px;
+}
+
+.card__price,
+.shownow__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+

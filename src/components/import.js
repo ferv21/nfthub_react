@@ -11,8 +11,10 @@ import Button from "../components/Button";
 import SlideHero from "../components/SlideHero";
 import NftInfoCard from "../components/NftInfoCard";
 import NftSellCard from "../components/NftSellCard";
+import CollectorsCard from "../components/CollectorsCard"
 
 export {
+    CollectorsCard,
     NftSellCard,
     NftInfoCard,
     SlideHero,

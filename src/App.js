@@ -1,5 +1,5 @@
 import './App.css';
-import { Hero, Header, NftCreate, NftExplore} from "./components/import";
+import { Hero, Header, NftCreate, NftExplore,TopCollections,Collectors} from "./components/import";
 
 
 function App() {
@@ -9,6 +9,8 @@ function App() {
       <Hero />
       <NftCreate />
       <NftExplore />
+      <TopCollections/>
+      <Collectors />
     </>
   );
 }

@@ -1,12 +1,72 @@
 import React from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
+import { profile1, profile2, profile3, profile4, profile5, profile6 } from "../../assets/import";
+import {Button,CollectorsCard} from "../import"
 import "./styles.css";
 
-const Collections = () => {
+
+const collectorsImg = [
+    {id:1, img:profile1},
+    {id:2, img:profile2},
+    {id:3, img:profile3},
+    {id:4, img:profile4},
+    {id:5, img:profile5},
+    {id:6, img:profile6},
+];
+
+const Collectors = () => {
     return (
         <>
-            <div>Collections</div>
+            <div className="container">
+                <h3 className="topcollections__title">
+                    Our Beloved Collectors
+                </h3>
+            <div className="collectors">
+                <div className="card__collector__slide">
+                    <div className="card__collector__profile">
+                        <img src={profile1} alt="" />
+                        <h4>#Ferv21</h4>
+                    </div>
+                    <div className="card__collector__button">
+                        <div className="card__collector__infos">
+                            <div>
+                                <p>Teste 1</p>
+                                <span>Oiiii</span>
+                            </div>
+                            <div>
+                                <p>Teste 1</p>
+                                <span>Oiiii</span>
+                            </div>
+                        </div>
+                        <Button title="See more"/>
+                    </div>
+                    <div className="card__collections">
+                        <h5>Collections</h5>
+                        <div className="card__collections__images">
+                            <Swiper 
+                                slidesPerView={3}
+                            >
+                                {collectorsImg.map((item)=> (
+                                    <SwiperSlide key={item.id}>
+                                        <img src={item.img} alt="" />
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
+                    </div>
+                </div>
+                <div className="collectors__cards">
+                    <CollectorsCard />
+                    <CollectorsCard />
+                    <CollectorsCard />
+                    <CollectorsCard />
+                </div>
+            </div>
+             
+
+            </div>
         </>
     )
 }
 
-export default Collections;
+export default Collectors;

@@ -1,17 +1,26 @@
 import React from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
 import "./styles.css"
-import { NFT10 } from "../../assets/import";
+import { NFT1,NFT2,NFT3,NFT4,NFT5,NFT6,NFT7,NFT8,NFT9,NFT10 } from "../../assets/import";
 import NftSellCard from "../NftSellCard";
 
 
 const sellNfts = [
-    {id:1, img:NFT10,title:"Testando NFT", price:"$250"},
-    {id:2, img:NFT10,title:"Testando NFT", price:"$250"},
-    {id:3, img:NFT10,title:"Testando NFT", price:"$250"},
-    {id:4, img:NFT10,title:"Testando NFT", price:"$250"},
-    {id:5, img:NFT10,title:"Testando NFT", price:"$250"},
-    {id:6, img:NFT10,title:"Testando NFT", price:"$250"},
+    {id:1, img:NFT7,title:"Testando NFT", price:"$250,00"},
+    {id:2, img:NFT8,title:"Testando NFT", price:"$250,00"},
+    {id:3, img:NFT9,title:"Testando NFT", price:"$250,00"},
+    {id:4, img:NFT4,title:"Testando NFT", price:"$250,00"},
+    {id:5, img:NFT5,title:"Testando NFT", price:"$250,00"},
+    {id:6, img:NFT6,title:"Testando NFT", price:"$250,00"},
+]
+
+const sellNfts2 = [
+    {id:4, img:NFT4,title:"Testando NFT", price:"$250,00"},
+    {id:5, img:NFT5,title:"Testando NFT", price:"$250,00"},
+    {id:6, img:NFT6,title:"Testando NFT", price:"$250,00"},
+    {id:1, img:NFT7,title:"Testando NFT", price:"$250,00"},
+    {id:2, img:NFT8,title:"Testando NFT", price:"$250,00"},
+    {id:3, img:NFT9,title:"Testando NFT", price:"$250,00"},
 ]
 
 const NftExplore = () => {
@@ -46,12 +55,32 @@ const NftExplore = () => {
                         slidesPerView={3}
                         pagination={{clickable:true}}
                         navigation
-                        
+                        spaceBetween={10}
                     >
                         {sellNfts.map((item) => (
-                            <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                <NftSellCard key={item.id} {...item}/>
-                            </SwiperSlide>      
+                            <>
+                                <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                    <NftSellCard key={item.id} {...item}/>
+                                </SwiperSlide>    
+                            </>
+                            
+                        ))}
+                    </Swiper>
+                    <Swiper 
+                        style={{marginTop:"60px"}}
+                        slidesPerView={3}
+                        pagination={{clickable:true}}
+                        navigation
+                        spaceBetween={10}
+                    
+                    >
+                        {sellNfts2.map((item) => (
+                            <>
+                                <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                    <NftSellCard key={item.id} {...item}/>
+                                </SwiperSlide>    
+                            </>
+                            
                         ))}
                     </Swiper>
                 </div>

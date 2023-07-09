@@ -1,16 +1,16 @@
 import React from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {NFT1,NFT2,NFT3} from "../../assets/import";
+import {NFT1,NFT5,NFT3} from "../../assets/import";
 import "./styles.css"
 import NftCard from "../NftCard";
 import {EffectCoverflow, EffectCards, Autoplay} from "swiper/modules";
 
 const slidesNft = [
     {id:584, image:NFT1, title:"The Cube Thingy"},
-    {id:22, image:NFT2, title:"A Door Within A Door"},
+    {id:22, image:NFT5, title:"A Door Within A Door"},
     {id:443, image:NFT3, title:"Leveled Tubing Goo"},
     {id:584, image:NFT1, title:"The Cube Thingy"},
-    {id:22, image:NFT2, title:"A Door Within A Door"},
+    {id:22, image:NFT5, title:"A Door Within A Door"},
     {id:443, image:NFT3, title:"Leveled Tubing Goo"},
 ]
 
