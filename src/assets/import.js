@@ -23,11 +23,38 @@ import profile10 from "../assets/profile10.jpg";
 import profile11 from "../assets/profile11.jpg";
 import profile12 from "../assets/profile12.jpg";
 
+import people1 from "../assets/people1.jpg";
+import people2 from "../assets/people2.jpg";
+import people3 from "../assets/people3.jpg";
+import people4 from "../assets/people4.jpg";
+import people5 from "../assets/people5.jpg";
+import people6 from "../assets/people6.jpg";
+import people7 from "../assets/people7.jpg";
+import people8 from "../assets/people8.jpg";
+import people9 from "../assets/people9.jpg";
+import people10 from "../assets/people10.jpg";
+import people11 from "../assets/people11.jpg";
+import people12 from "../assets/people12.jpg";
+
+
 
 
 
 
 export {
+    people1,
+    people2,
+    people3,
+    people4,
+    people5,
+    people6,
+    people7,
+    people8,
+    people9,
+    people10,
+    people11,
+    people12,
+
     profile1,
     profile2,
     profile3,
@@ -40,6 +67,7 @@ export {
     profile10,
     profile11,
     profile12,
+    
     peoples,
     NFT1,
     NFT2,

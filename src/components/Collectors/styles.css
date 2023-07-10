@@ -51,9 +51,7 @@
 }
 
 .card__collections__images {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 16px;
 }
 
 .card__collections__images img {

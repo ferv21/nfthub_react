@@ -1,0 +1,28 @@
+.artists h3 {
+    margin: 80px 0;
+    font-size: 28px;
+    color:#fff;
+}
+
+
+.artists img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.artist__card {
+    background-color: var(--card-purple);
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 60px;
+}
+
+.artist__card p {
+    font-weight: bold;
+    color: #fff;
+}

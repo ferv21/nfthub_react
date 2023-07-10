@@ -1,0 +1,81 @@
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    background-color: var(--card-purple);
+    margin-top: 80px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer p{
+    text-align: justify;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.footer__social-media{
+    width: 400px;
+}
+
+.footer__logo {
+    font-size: 22px;
+}
+
+.social__links{
+    display: flex;
+    margin-top: 80px;
+}
+
+.social__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
+.social__icon:hover {
+    transform: scale(1.2);
+}
+
+.footer__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    color:#fff;
+}
+
+.footer__links div ul li {
+    margin: 16px 0;
+    color: var(--text-color);
+}
+
+.footer__links div ul li a{
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.footer__links div ul li a:hover{
+    border-bottom: 1px solid purple;
+}
+
+.footer__links ul {
+    width: 200px;
+}
+
+.footer__links div {
+    padding: 0 16px;
+}
+
+
+
+

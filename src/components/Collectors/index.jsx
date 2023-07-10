@@ -41,13 +41,15 @@ const Collectors = () => {
                         <Button title="See more"/>
                     </div>
                     <div className="card__collections">
-                        <h5>Collections</h5>
+                       
                         <div className="card__collections__images">
                             <Swiper 
                                 slidesPerView={3}
+                                navigation
+                                pagination={{clickable:true}}
                             >
                                 {collectorsImg.map((item)=> (
-                                    <SwiperSlide key={item.id}>
+                                    <SwiperSlide style={{display:"flex", justifyContent:"center"}} key={item.id}>
                                         <img src={item.img} alt="" />
                                     </SwiperSlide>
                                 ))}
