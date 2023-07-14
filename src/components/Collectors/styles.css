@@ -60,3 +60,14 @@
     display: block;
     margin: 0 16px;
 }
+
+@media screen and (max-width:414px) {
+    .collectors {
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .collectors__cards {
+        grid-template-columns: 1fr;
+    }
+}

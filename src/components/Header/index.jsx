@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { FiUpload } from "react-icons/fi"
 import { CgMenuGridO } from "react-icons/cg"
  
@@ -6,6 +6,14 @@ import { CgMenuGridO } from "react-icons/cg"
 import "./styles.css";
 
 const Header = () => {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+    const openMenu = () => {
+        
+        setMenuOpen(!menuOpen);
+    }
+
+
     return (
         <>
             <header className="header container">
@@ -41,11 +49,34 @@ const Header = () => {
                         </button>
                     </div>
                     <div className="btn-menu">
-                        <button className="menu">
+                        <button onClick={openMenu} className="menu">
                             <CgMenuGridO  size={20}/>
                         </button>
                     </div>
                 </div>
+                {menuOpen ? (
+                    <>
+                    <div className="mobile__menu">
+                        <div>
+                            <ul className="mobile__menu__dropdown">
+                                <li>
+                                    <a href="#Discover">Discover</a>
+                                </li>
+                                <li>
+                                    <a href="#Market">Marketplace</a>
+                                </li>
+                                <li>
+                                    <a href="#Artist">Artist</a>
+                                </li>
+                                <li>
+                                    <a href="#Community">Community</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </>
+                ) : ''}
+               
             </header>
             <div className="header__gradient"/>
             <div className="header__blue_gradient"/>

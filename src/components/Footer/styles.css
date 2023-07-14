@@ -1,6 +1,4 @@
 .footer {
-    display: flex;
-    justify-content: space-between; 
     background-color: var(--card-purple);
     margin-top: 80px;
 }
@@ -74,6 +72,28 @@
 
 .footer__links div {
     padding: 0 16px;
+}
+
+@media screen and (max-width:414px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__links{
+        margin-top: 40px;
+        padding: 0 16px;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+    .footer__links div {
+        padding: 0px;
+    }
+    .footer__links ul {
+        width: 100%;
+    }
+    .footer__social-media {
+        padding: 0 16px;
+    }
 }
 
 

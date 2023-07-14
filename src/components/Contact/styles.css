@@ -51,3 +51,25 @@
     font-size: 16px;
     cursor: pointer;
 }
+
+@media screen and (max-width:414px) {
+
+    .contact {
+        width: 90%;
+    }
+
+    .contact p {
+        width: 90%;
+        text-align: center;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+    .form input {
+        margin-right:0;
+    }
+    .btn-form {
+        margin-top: 16px;
+    }
+}

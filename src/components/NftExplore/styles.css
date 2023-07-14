@@ -24,3 +24,14 @@
 .nft__cards__sell {
     margin-top: 60px;
 }
+
+@media screen and (max-width:414px){
+    .select__options {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 40px;
+    }
+
+    .select {
+        width: 100%;
+    }
+}

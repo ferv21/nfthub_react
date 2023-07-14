@@ -24,9 +24,18 @@ const Artists = () => {
             <div className="artists container">
                 <h3>Our Top Artists</h3>
                 <Swiper
-                
+                breakpoints={{
+                    1024: {
+                        slidesPerView:3,
+                    },
+                    820: {
+                        slidesPerView:2,
+                    },
+                    576: {
+                        slidesPerView:2
+                    }
+                }}
                 navigation
-                slidesPerView={3}
                 >
                 {artists.map((item) => (
                     <SwiperSlide style={{display:"flex", justifyContent:"center"}}>

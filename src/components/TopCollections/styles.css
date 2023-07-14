@@ -9,3 +9,12 @@
     color: white;
     font-size: 28px;
 }
+
+@media screen and (max-width:414px) {
+    .profile__list {
+        grid-template-columns:  1fr;
+    }
+    .topcollections__title {
+        text-align: center;
+    }
+}

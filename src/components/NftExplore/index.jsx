@@ -1,5 +1,6 @@
 import React from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
+import { useMediaQuery } from "react-responsive";
 import "./styles.css"
 import { NFT1,NFT2,NFT3,NFT4,NFT5,NFT6,NFT7,NFT8,NFT9,NFT10 } from "../../assets/import";
 import NftSellCard from "../NftSellCard";
@@ -24,6 +25,9 @@ const sellNfts2 = [
 ]
 
 const NftExplore = () => {
+
+    const isMobile =useMediaQuery({maxWidth: 414})
+
     return (
         <>
             <div className="nft__explore container section__padding">
@@ -52,7 +56,17 @@ const NftExplore = () => {
                 </div>
                 <div className="nft__cards__sell">
                     <Swiper 
-                        slidesPerView={3}
+                         breakpoints={{
+                            1024: {
+                                slidesPerView:3,
+                            },
+                            820: {
+                                slidesPerView:2,
+                            },
+                            576: {
+                                slidesPerView:2
+                            }
+                        }}
                         pagination={{clickable:true}}
                         navigation
                         spaceBetween={10}
@@ -66,23 +80,38 @@ const NftExplore = () => {
                             
                         ))}
                     </Swiper>
-                    <Swiper 
-                        style={{marginTop:"60px"}}
-                        slidesPerView={3}
-                        pagination={{clickable:true}}
-                        navigation
-                        spaceBetween={10}
-                    
-                    >
-                        {sellNfts2.map((item) => (
-                            <>
-                                <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
-                                    <NftSellCard key={item.id} {...item}/>
-                                </SwiperSlide>    
-                            </>
-                            
-                        ))}
+                    {isMobile ? null : (
+                        <>
+                            <Swiper 
+                                style={{marginTop:"60px"}}
+                                breakpoints={{
+                                    1024: {
+                                        slidesPerView:3,
+                                    },
+                                    820: {
+                                        slidesPerView:2,
+                                    },
+                                    576: {
+                                        slidesPerView:2
+                                    }
+                                }}
+                                pagination={{clickable:true}}
+                                navigation
+                                spaceBetween={10}
+
+                            >
+                                {sellNfts2.map((item) => (
+                                    <>
+                                        <SwiperSlide style={{display:"flex", justifyContent:"center"}}>
+                                            <NftSellCard key={item.id} {...item}/>
+                                        </SwiperSlide>    
+                                    </>
+                                    
+                                ))}
                     </Swiper>
+                        </>
+                    )}
+                    
                 </div>
             </div>
         </>

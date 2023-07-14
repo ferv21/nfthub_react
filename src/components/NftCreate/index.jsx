@@ -8,13 +8,13 @@ import "./styles.css"
 
 const nftsCards = [
     {
-        img:<BsRocketTakeoff size={60}/>,title:"Teste Card",description:"lorem ipsum etc fets aisjd iasdolg auwd a awdj8cja ajj8djw"
+        img:<BsRocketTakeoff size={60}/>,title:"Teste Card",description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit"
     },
     {
-        img:<FaGripfire size={60}/>,title:"Teste Card",description:"lorem ipsum etc fets aisjd iasdolg auwd a awdj8cja ajj8djw"
+        img:<FaGripfire size={60}/>,title:"Teste Card",description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit"
     },
     {
-        img:<GiBorderedShield size={60}/>,title:"Teste Card",description:"lorem ipsum etc fets aisjd iasdolg auwd a awdj8cja ajj8djw"
+        img:<GiBorderedShield size={60}/>,title:"Teste Card",description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit"
     }
 ]
 

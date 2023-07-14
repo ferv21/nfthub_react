@@ -4,6 +4,7 @@
     align-items: center;
 }
 
+
 .hero h1 {
     text-align: center;
     z-index: 5;
@@ -23,6 +24,7 @@
 .buttons {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .play-icon {
@@ -41,4 +43,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-bottom: 1px solid purple ;
+}
+
+@media screen and (max-width:414px){
+
+    .section__padding {
+        padding: 40px 8px;
+    }
+    
+    .hero__content h1 {
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: 0;
+    }
+    .hero__content p {
+        font-size: 12px;
+    }
 }

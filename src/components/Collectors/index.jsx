@@ -44,7 +44,17 @@ const Collectors = () => {
                        
                         <div className="card__collections__images">
                             <Swiper 
-                                slidesPerView={3}
+                                breakpoints={{
+                                    1024: {
+                                        slidesPerView:3,
+                                    },
+                                    820: {
+                                        slidesPerView:2,
+                                    },
+                                    576: {
+                                        slidesPerView:2
+                                    }
+                                }}
                                 navigation
                                 pagination={{clickable:true}}
                             >

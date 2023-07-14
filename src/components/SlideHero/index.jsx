@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {NFT1,NFT5,NFT3} from "../../assets/import";
 import "./styles.css"
@@ -15,10 +15,21 @@ const slidesNft = [
 ]
 
 const SlideHero = () => {
+
     return (
             <div className="slideNfts">
             <Swiper 
-                slidesPerView={3}
+                breakpoints={{
+                    1024: {
+                        slidesPerView:3,
+                    },
+                    820: {
+                        slidesPerView:2,
+                    },
+                    576: {
+                        slidesPerView:2
+                    }
+                }}
                 pagination={{clickable:true}}
                 navigation
                 modules={{EffectCoverflow}}

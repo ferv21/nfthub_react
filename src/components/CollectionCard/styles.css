@@ -26,3 +26,15 @@
 .list__item a {
     color:  var(--morelight-purple);
 }
+
+@media screen and (max-width: 414px) {
+    .list__item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 8px 32px;
+        border: 1px solid var(--morelight-purple);
+    }
+    .list__item img {
+        height: 80px;
+    }
+}
