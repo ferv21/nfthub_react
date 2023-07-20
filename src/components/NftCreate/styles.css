@@ -11,9 +11,15 @@
     font-size: 34px;
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:540px) {
     .nftcreates {
         grid-template-columns: 1fr;
         padding: 16px;
+    }
+}
+
+@media screen and (max-width:912px) {
+    .nftcreates {
+        padding: 0 32px;
     }
 }

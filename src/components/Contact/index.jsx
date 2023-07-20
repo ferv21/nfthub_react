@@ -14,6 +14,8 @@ const Contact = () => {
                     <input type="email"/>
                     <button className="btn-form btn__gradient">Send me</button>
                 </form>
+                <div className="contact__gradient__position__left lightblue__gradient"/>
+                <div className="contact__gradient__position__right purple__gradient"/>
             </div>
         </>
     )

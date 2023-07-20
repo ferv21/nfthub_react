@@ -8,3 +8,9 @@
     font-size: 16px;
     cursor: pointer;
 }
+
+@media screen and (max-width:414px) {
+    .btn {
+        font-size: 14px;
+    }
+}

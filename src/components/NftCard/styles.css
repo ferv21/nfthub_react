@@ -67,3 +67,18 @@
 .waiting__list span {
     margin-bottom: 16px;
 }
+
+@media screen and (max-width:414px) {
+    .card__ends p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .card {
+        max-width: 300px;
+    }
+    .card__ends p {
+        font-size: 10px;
+    }
+}

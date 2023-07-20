@@ -1,7 +1,12 @@
+.nft__explore {
+    position: relative;
+}
+
 .nft__explore h2{
     color: #fff;
     font-size: 34px;
     text-align: center;
+    position: relative;
 }
 
 .select__options {
@@ -21,14 +26,45 @@
     color: #fff;
 }
 
+.select option {
+    background-color: purple;
+}
+
 .nft__cards__sell {
     margin-top: 60px;
+}
+
+.nft__explore__position__left {
+    position: absolute;
+    left: -300px;
+    top: 16%;
+    width: 500px;
+    height: 600px;
+    z-index: -1;
+}
+.nft__explore__position__right{
+    position: absolute;
+    right: -300px;
+    top: 0;
+    width: 500px;
+    height: 600px;
+    z-index: -1;
+}
+
+.nft__explore__position__bottom {
+    position: absolute;
+    right: -300px;
+    bottom: 0;
+    width: 500px;
+    height: 600px;
+    z-index: -1;
 }
 
 @media screen and (max-width:414px){
     .select__options {
         grid-template-columns: 1fr 1fr;
         margin-top: 40px;
+        padding: 16px;
     }
 
     .select {

@@ -1,6 +1,6 @@
 import React from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
-import { profile1, profile2, profile3, profile4, profile5, profile6 } from "../../assets/import";
+import { profile1, profile2, profile3, profile4, profile5, profile6, profile7, profile8, profile9, profile10, profile11, profile12 } from "../../assets/import";
 import {Button,CollectorsCard} from "../import"
 import "./styles.css";
 
@@ -14,6 +14,15 @@ const collectorsImg = [
     {id:6, img:profile6},
 ];
 
+const profiles = [
+    {id:1, profile:profile7, name:"ArtSpectra", tag:"VibrantVisions"},
+    {id:2, profile:profile8, name:"CryptoCanvas", tag:"DigitalDreamscape"},
+    {id:3, profile:profile9, name:"PixelVerse", tag:"TechTriumph"},
+    {id:4, profile:profile10, name:"EtherVisions", tag:"AbstractRealms"},
+]
+
+
+
 const Collectors = () => {
     return (
         <>
@@ -25,17 +34,17 @@ const Collectors = () => {
                 <div className="card__collector__slide">
                     <div className="card__collector__profile">
                         <img src={profile1} alt="" />
-                        <h4>#Ferv21</h4>
+                        <h4>Ferv21</h4>
                     </div>
                     <div className="card__collector__button">
                         <div className="card__collector__infos">
                             <div>
-                                <p>Teste 1</p>
-                                <span>Oiiii</span>
+                                <p>Abstract</p>
+                                <span>DigitalArt</span>
                             </div>
                             <div>
-                                <p>Teste 1</p>
-                                <span>Oiiii</span>
+                                <p>Crypto</p>
+                                <span>TechArt</span>
                             </div>
                         </div>
                         <Button title="See more"/>
@@ -56,7 +65,7 @@ const Collectors = () => {
                                     }
                                 }}
                                 navigation
-                                pagination={{clickable:true}}
+                                
                             >
                                 {collectorsImg.map((item)=> (
                                     <SwiperSlide style={{display:"flex", justifyContent:"center"}} key={item.id}>
@@ -68,11 +77,11 @@ const Collectors = () => {
                     </div>
                 </div>
                 <div className="collectors__cards">
-                    <CollectorsCard />
-                    <CollectorsCard />
-                    <CollectorsCard />
-                    <CollectorsCard />
+                    {profiles.map((profile) => (
+                        <CollectorsCard key={profile.id}{...profile}/>
+                    ))}
                 </div>
+                <div className="collectors__gradient__position pink__gradient"/>
             </div>
              
 

@@ -1,17 +1,16 @@
 import React from "react";
-import {profile1} from "../../assets/import";
 import "./styles.css"
 
-const CollectorsCard = () => {
+const CollectorsCard = ({profile, name, tag}) => {
     return (
         <>
             <div className="collector__card">
                 <div className="collector__card__profile">
-                    <img src={profile1} alt="" />
-                    <h5>#Ferv21</h5>
+                    <img src={profile} alt="" />
+                    <h5>{name}</h5>
                 </div>
                 <div className="collector__card__infos">
-                        <p>ArtisticAuctioneer</p>
+                        <p>{tag}</p>
                         <a href="#a">See more</a>
                 </div>
             </div>

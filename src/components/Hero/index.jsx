@@ -24,7 +24,10 @@ const Hero = () => {
                 </div>
                 <div className="section__padding">
                     <SlideHero />
-                </div>               
+                </div>
+                <div className="hero__left__position purple__gradient"/>  
+                <div className="hero__right__position purple__gradient"/>    
+                <div className="hero__center__position blue__gradient"/>        
             </section>
         </>
     )

@@ -1,8 +1,14 @@
-.profile__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap:50px;
-    margin: 80px 0;
+.topcollections {
+    position: relative;
+}
+
+.topcollections__gradient__position {
+    position: absolute;
+    top: -100px;
+    left: -220px;
+    width: 400px;
+    height: 500px;
+    z-index: -1;
 }
 
 .topcollections__title{
@@ -10,9 +16,18 @@
     font-size: 28px;
 }
 
-@media screen and (max-width:414px) {
+.profile__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:50px;
+    margin: 80px 0;
+}
+
+
+@media screen and (max-width:540px) {
     .profile__list {
         grid-template-columns:  1fr;
+        padding: 16px;
     }
     .topcollections__title {
         text-align: center;

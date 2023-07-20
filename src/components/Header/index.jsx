@@ -20,7 +20,7 @@ const Header = () => {
                 <div className="logo">
                     <h1>NFT<span className="color__gradient">-FV</span></h1>
                     <div className="logo-menu">
-                        <button className="menu">
+                        <button onClick={openMenu} className="menu">
                          <CgMenuGridO size={20} />
                         </button>
                     </div>

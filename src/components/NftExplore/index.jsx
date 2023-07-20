@@ -7,26 +7,26 @@ import NftSellCard from "../NftSellCard";
 
 
 const sellNfts = [
-    {id:1, img:NFT7,title:"Testando NFT", price:"$250,00"},
-    {id:2, img:NFT8,title:"Testando NFT", price:"$250,00"},
-    {id:3, img:NFT9,title:"Testando NFT", price:"$250,00"},
-    {id:4, img:NFT4,title:"Testando NFT", price:"$250,00"},
-    {id:5, img:NFT5,title:"Testando NFT", price:"$250,00"},
-    {id:6, img:NFT6,title:"Testando NFT", price:"$250,00"},
+    {id:1, img:NFT7,title:"Cosmic Dreams", price:"$300,00"},
+    {id:2, img:NFT8,title:"Electric Vortex", price:"$400,00"},
+    {id:3, img:NFT9,title:"Enchanted Forest", price:"$600,00"},
+    {id:4, img:NFT4,title:"Neon Serenade", price:"$350,00"},
+    {id:5, img:NFT5,title:"Digital Embers", price:"$450,00"},
+    {id:6, img:NFT6,title:"Celestial Symphony", price:"$700,00"},
 ]
 
 const sellNfts2 = [
-    {id:4, img:NFT4,title:"Testando NFT", price:"$250,00"},
-    {id:5, img:NFT5,title:"Testando NFT", price:"$250,00"},
-    {id:6, img:NFT6,title:"Testando NFT", price:"$250,00"},
-    {id:1, img:NFT7,title:"Testando NFT", price:"$250,00"},
-    {id:2, img:NFT8,title:"Testando NFT", price:"$250,00"},
-    {id:3, img:NFT9,title:"Testando NFT", price:"$250,00"},
+    {id:7, img:NFT4,title:"Techno Fizz", price:"$250,00"},
+    {id:8, img:NFT5,title:"Aurora Borealis", price:"$900,00"},
+    {id:9, img:NFT6,title:"Pixel Perfection", price:"$550,00"},
+    {id:10, img:NFT7,title:"Testando NFT", price:"$800,00"},
+    {id:11, img:NFT8,title:"Testando NFT", price:"$350,00"},
+    {id:12, img:NFT9,title:"Testando NFT", price:"$1000,00"},
 ]
 
 const NftExplore = () => {
 
-    const isMobile =useMediaQuery({maxWidth: 414})
+    const isMobile = useMediaQuery({maxWidth: 414})
 
     return (
         <>
@@ -113,7 +113,11 @@ const NftExplore = () => {
                     )}
                     
                 </div>
+                <div className="nft__explore__position__left lightblue__gradient"/>
+                <div className="nft__explore__position__right purple__gradient"/>
+                <div className="nft__explore__position__bottom purple__gradient"/>                   
             </div>
+           
         </>
     )
 }

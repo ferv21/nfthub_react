@@ -42,44 +42,26 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.header__gradient{
-  /* background: radial-gradient(circle at 21% 34%, rgba(94, 25, 78, 1) 0%, rgba(70, 44, 109, 1) 50%); */
+.pink__gradient{
   background: radial-gradient(circle at 50% 50%, rgba(191, 68, 207, 1) 0%, rgba(70, 44, 109, 1) 50%);
   filter: blur(100px);
-  position: absolute;
-  top: 0;
-  left: 100px;
-  width: 300px;
-  height: 300px;
-  z-index: -4;
+
 }
 
-.header__blue_gradient{
+.purple__gradient{
   background: radial-gradient(circle at 50% 50%, rgba(144, 121, 253, 1) 0%, rgba(70, 44, 109, 1) 50%);
   filter: blur(80px);
-  position: absolute;
-  top: 0;
-  right: 100px;
-  width: 600px;
-  height: 300px;
-  z-index: -2;
+
 }
 
-.hero__gradient {
-  background: radial-gradient(circle at 50% 50%, rgba(43, 113, 154, 1) 0%, rgba(55, 34, 101, 1) 50%, rgba(22, 26, 67, 1) 100%);
-  filter: blur(100px);
-  position: absolute;
-  z-index: -1;
-  left: 10%;
-  width: 80%;
-  height: 80%;
-  top: 50%;
+.blue__gradient {
+  background: radial-gradient(circle at 50% 50%, rgb(96, 155, 190) 0%, rgb(58, 36, 105) 50%, rgba(22, 26, 67, 1) 100%);
+  filter: blur(80px);
+
 }
 
-.hero__section{
-  display: flex;
-  justify-content: center;
-  position: relative;
-  min-height: 50vh;
-  z-index: 5;
+.lightblue__gradient {
+  background: radial-gradient(circle at 50% 50%, rgb(96, 155, 190) 0%, rgb(58, 36, 105) 50%, rgb(47, 53, 122) 100%);
+  filter: blur(80px);
 }
+

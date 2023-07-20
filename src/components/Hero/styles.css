@@ -4,6 +4,36 @@
     align-items: center;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero__left__position {
+    position: absolute;
+    top:-120px;
+    left: -500px;
+    width: 600px;
+    height: 300px;
+    z-index: -4;
+}
+
+.hero__right__position {
+    position: absolute;
+    top: -59px;
+    right: -400px;
+    width: 900px;
+    height: 300px;
+    z-index: -2;
+}
+
+.hero__center__position{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    top: 0;
+}
 
 .hero h1 {
     text-align: center;
@@ -45,7 +75,7 @@
     border-bottom: 1px solid purple ;
 }
 
-@media screen and (max-width:414px){
+@media screen and (max-width:540px){
 
     .section__padding {
         padding: 40px 8px;
@@ -58,5 +88,17 @@
     }
     .hero__content p {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .hero__content h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .hero__content h1 {
+        font-size: 32px;
     }
 }

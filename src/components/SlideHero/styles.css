@@ -4,6 +4,10 @@
     
 }
 
+.slideNfts {
+    position: relative;
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
     background: linear-gradient(90deg, rgba(58, 58, 255, 1) 0%, rgba(110, 47, 243, 1) 50%, rgba(170, 30, 241, 1) 100%);

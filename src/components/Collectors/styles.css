@@ -3,6 +3,7 @@
     grid-template-columns: 600px auto;
     gap: 24px;
     margin-top: 80px;
+    position: relative;
 }   
 
 .card__collector__slide {
@@ -15,6 +16,10 @@
 .card__collector__profile {
     display:flex;
     align-items: center;
+}
+
+.card__collector__profile h4 {
+    font-size: 22px;
 }
 
 .card__collector__profile img {
@@ -33,6 +38,11 @@
 
 .card__collector__infos {
     display: flex;
+}
+
+.card__collector__infos p,
+.card__collector__infos span {
+    font-size: 18px;
 }
 
 .card__collector__infos div {
@@ -61,7 +71,17 @@
     margin: 0 16px;
 }
 
-@media screen and (max-width:414px) {
+.collectors__gradient__position { 
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 500px;
+    height: 400px;
+    z-index: -1;
+}
+
+
+@media screen and (max-width:540px) {
     .collectors {
         padding: 0 16px;
         display: flex;
@@ -69,5 +89,9 @@
     }
     .collectors__cards {
         grid-template-columns: 1fr;
+    }
+    .card__collector__infos p,
+    .card__collector__infos span {
+    font-size: 12px;
     }
 }

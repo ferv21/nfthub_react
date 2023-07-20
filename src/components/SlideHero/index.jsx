@@ -23,18 +23,12 @@ const SlideHero = () => {
                     1024: {
                         slidesPerView:3,
                     },
-                    820: {
-                        slidesPerView:2,
-                    },
-                    576: {
-                        slidesPerView:2
+                    912: {
+                        slidesPerView:1,
                     }
                 }}
                 pagination={{clickable:true}}
                 navigation
-                modules={{EffectCoverflow}}
-                coverflowEffect={{slideShadows:false}}
-                effect="coverflow"
                 autoplay={{delay:3000,disableOnInteraction: false}}
             >
                 {slidesNft.map((item) => (

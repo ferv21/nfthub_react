@@ -25,7 +25,7 @@ const profiles = [
 const TopCollections = () => {
     return (
         <>
-            <div className="container">
+            <div className="container topcollections">
                 <h3 className="topcollections__title">
                     Top collections over  <br />
                     last week
@@ -35,6 +35,7 @@ const TopCollections = () => {
                         <CollectionCard key={item.id}{...item}/>
                     ))}
                 </div>
+                <div className="topcollections__gradient__position lightblue__gradient"/>
             </div>
         </>
     )
