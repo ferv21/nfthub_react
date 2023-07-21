@@ -3,7 +3,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {NFT1,NFT5,NFT3} from "../../assets/import";
 import "./styles.css"
 import NftCard from "../NftCard";
-import {EffectCoverflow, EffectCards, Autoplay} from "swiper/modules";
+
 
 const slidesNft = [
     {id:584, image:NFT1, title:"The Cube Thingy"},

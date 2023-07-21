@@ -14,3 +14,9 @@
         font-size: 14px;
     }
 }
+
+@media screen and (max-width:360px) {
+    .btn {
+        font-size: 12px;
+    }
+}

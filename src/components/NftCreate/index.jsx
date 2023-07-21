@@ -8,13 +8,13 @@ import "./styles.css"
 
 const nftsCards = [
     {
-        img:<BsRocketTakeoff size={60}/>,title:"Teste Card",description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit"
+        img:<BsRocketTakeoff size={60}/>,title:"Revolutionary NFTs!",description:"Discover unique art, music, and entertainment NFTs on the blockchain."
     },
     {
-        img:<FaGripfire size={60}/>,title:"Teste Card",description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit"
+        img:<FaGripfire size={60}/>,title:"Exclusive NFTs",description:"Own one-of-a-kind digital masterpieces with blockchain authentication."
     },
     {
-        img:<GiBorderedShield size={60}/>,title:"Teste Card",description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit"
+        img:<GiBorderedShield size={60}/>,title:"Expanding NFT Market",description:"Join the growing NFT market for unique digital ownership opportunities."
     }
 ]
 

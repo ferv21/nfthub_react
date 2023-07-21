@@ -5,6 +5,7 @@ import {    profile1,profile2,profile3,profile4,
 } from "../../assets/import";
 import "./styles.css";
 import CollectionCard from "../CollectionCard";
+import { useMediaQuery } from "react-responsive";
 
 
 const profiles = [
@@ -23,6 +24,9 @@ const profiles = [
 ]
 
 const TopCollections = () => {
+
+    const isMobile = useMediaQuery({maxWidth: 540});
+
     return (
         <>
             <div className="container topcollections">
@@ -30,12 +34,16 @@ const TopCollections = () => {
                     Top collections over  <br />
                     last week
                 </h3>
-                <div className="profile__list">
-                    {profiles.map((item) => (
-                        <CollectionCard key={item.id}{...item}/>
-                    ))}
-                </div>
-                <div className="topcollections__gradient__position lightblue__gradient"/>
+                    <div className="profile__list">
+                        {profiles.map((item) => (
+                            <CollectionCard key={item.id}{...item}/>
+                        ))}
+                    </div>
+                {isMobile ? null : (
+                    <>
+                      <div className="topcollections__gradient__position lightblue__gradient"/>
+                    </>
+                )}
             </div>
         </>
     )

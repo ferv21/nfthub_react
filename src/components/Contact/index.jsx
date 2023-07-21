@@ -1,7 +1,11 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 import "./styles.css";
 
 const Contact = () => {
+
+    const isMobile = useMediaQuery({maxWidth: 540})
+
     return (
         <>
             <div className="container contact">
@@ -14,8 +18,12 @@ const Contact = () => {
                     <input type="email"/>
                     <button className="btn-form btn__gradient">Send me</button>
                 </form>
-                <div className="contact__gradient__position__left lightblue__gradient"/>
-                <div className="contact__gradient__position__right purple__gradient"/>
+                {isMobile ? null : (
+                    <>
+                        <div className="contact__gradient__position__left lightblue__gradient"/>
+                        <div className="contact__gradient__position__right purple__gradient"/>
+                    </>
+                )}
             </div>
         </>
     )

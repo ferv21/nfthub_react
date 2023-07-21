@@ -60,7 +60,7 @@
     z-index: -1;
 }
 
-@media screen and (max-width:414px){
+@media screen and (max-width:540px){
     .select__options {
         grid-template-columns: 1fr 1fr;
         margin-top: 40px;
@@ -71,3 +71,16 @@
         width: 100%;
     }
 }
+
+
+@media screen and (min-width:540px) and (max-width:1440px)   {
+    .select__options {
+        padding: 0 32px;
+    }
+    .nft__explore__position__right,
+    .nft__explore__position__bottom{
+        right: 0;
+        width: 100px;
+    }
+}
+

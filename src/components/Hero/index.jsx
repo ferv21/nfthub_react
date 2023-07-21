@@ -1,10 +1,14 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 import {SlideHero} from "../import";
 import { BsPlayCircle } from "react-icons/bs";
 import { Button } from "../import";
 import "./styles.css";
 
 const Hero = () => {
+
+    const isMobileGradient = useMediaQuery({maxWidth:540});
+
     return (
         <>
             <section className="container hero section__padding">
@@ -25,9 +29,13 @@ const Hero = () => {
                 <div className="section__padding">
                     <SlideHero />
                 </div>
-                <div className="hero__left__position purple__gradient"/>  
-                <div className="hero__right__position purple__gradient"/>    
-                <div className="hero__center__position blue__gradient"/>        
+                {isMobileGradient ? null : (
+                    <>
+                        <div className="hero__left__position purple__gradient"/>  
+                        <div className="hero__right__position purple__gradient"/>    
+                        <div className="hero__center__position blue__gradient"/>        
+                    </>
+                )}
             </section>
         </>
     )

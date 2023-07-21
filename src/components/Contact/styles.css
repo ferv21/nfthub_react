@@ -90,3 +90,19 @@
         margin-top: 16px;
     }
 }
+
+@media screen and (max-width:1440px) {
+    .contact__gradient__position__right {
+        width: 100px;
+        right: 0;
+    }
+
+    .contact__gradient__position__left{
+        width: 100px;
+        left: 0;
+    }
+
+    .contact {
+        width: 96%;
+    }
+}

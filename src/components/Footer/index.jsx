@@ -63,7 +63,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="additional__links">
                         <h4>Additional Links</h4>
                         <ul>
                             <li>

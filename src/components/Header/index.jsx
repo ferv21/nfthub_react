@@ -4,9 +4,11 @@ import { CgMenuGridO } from "react-icons/cg"
  
 
 import "./styles.css";
+import { useMediaQuery } from "react-responsive";
 
 const Header = () => {
 
+    const isMobileGradient = useMediaQuery({maxWidth:540});
     const [menuOpen, setMenuOpen] = useState(false);
     const openMenu = () => {
         
@@ -78,8 +80,12 @@ const Header = () => {
                 ) : ''}
                
             </header>
-            <div className="header__gradient"/>
-            <div className="header__blue_gradient"/>
+            {isMobileGradient ? null : (
+                <>
+                    <div className="header__gradient"/>
+                    <div className="header__blue_gradient"/>
+                </>
+            )}
         </>
     )
 }

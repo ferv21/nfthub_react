@@ -102,3 +102,10 @@
         font-size: 32px;
     }
 }
+
+@media screen and (max-width:1440px) {
+    .hero__right__position {
+        width: 100px;
+        right: 0;
+    }
+}

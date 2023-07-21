@@ -28,8 +28,23 @@
     .profile__list {
         grid-template-columns:  1fr;
         padding: 16px;
+        margin: 40px 0;
+
     }
     .topcollections__title {
         text-align: center;
     }
 }
+
+@media screen and (min-width:768px) and  (max-width:1240px) {
+    .profile__list {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding: 0 16px;
+    }
+    
+    .topcollections__title {
+        text-align: center;
+    }
+}   
+

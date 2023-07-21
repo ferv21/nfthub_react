@@ -19,14 +19,15 @@ const sellNfts2 = [
     {id:7, img:NFT4,title:"Techno Fizz", price:"$250,00"},
     {id:8, img:NFT5,title:"Aurora Borealis", price:"$900,00"},
     {id:9, img:NFT6,title:"Pixel Perfection", price:"$550,00"},
-    {id:10, img:NFT7,title:"Testando NFT", price:"$800,00"},
-    {id:11, img:NFT8,title:"Testando NFT", price:"$350,00"},
-    {id:12, img:NFT9,title:"Testando NFT", price:"$1000,00"},
+    {id:10, img:NFT7,title:"Enchanted Forest", price:"$800,00"},
+    {id:11, img:NFT8,title:"Electric Vortex", price:"$350,00"},
+    {id:12, img:NFT9,title:"Celestial Symphony", price:"$1000,00"},
 ]
 
 const NftExplore = () => {
 
-    const isMobile = useMediaQuery({maxWidth: 414})
+    const isMobile = useMediaQuery({maxWidth: 1280});
+    const isMobileGradient = useMediaQuery({maxWidth:540});
 
     return (
         <>
@@ -57,14 +58,14 @@ const NftExplore = () => {
                 <div className="nft__cards__sell">
                     <Swiper 
                          breakpoints={{
-                            1024: {
-                                slidesPerView:3,
+                            1440: {
+                                slidesPerView:3
                             },
-                            820: {
+                            1024: {
                                 slidesPerView:2,
                             },
-                            576: {
-                                slidesPerView:2
+                            820: {
+                                slidesPerView:1,
                             }
                         }}
                         pagination={{clickable:true}}
@@ -90,9 +91,6 @@ const NftExplore = () => {
                                     },
                                     820: {
                                         slidesPerView:2,
-                                    },
-                                    576: {
-                                        slidesPerView:2
                                     }
                                 }}
                                 pagination={{clickable:true}}
@@ -113,9 +111,13 @@ const NftExplore = () => {
                     )}
                     
                 </div>
-                <div className="nft__explore__position__left lightblue__gradient"/>
-                <div className="nft__explore__position__right purple__gradient"/>
-                <div className="nft__explore__position__bottom purple__gradient"/>                   
+                {isMobileGradient ? null : (
+                    <>
+                        <div className="nft__explore__position__left lightblue__gradient"/>
+                        <div className="nft__explore__position__right purple__gradient"/>
+                        <div className="nft__explore__position__bottom purple__gradient"/>                   
+                    </>
+                )}
             </div>
            
         </>

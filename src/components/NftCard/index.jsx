@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import {peoples} from "../../assets/import";
 import "./styles.css"
 import {Button} from "../import"
+import { useMediaQuery } from "react-responsive";
 
 
 
 const NftCard = ({id,image,ends,title}) => {
+
+    const isMobile = useMediaQuery({maxWidth:280});
 
     const [hours, setHours] = useState(12);
     const [min, setMin] = useState(0);
@@ -50,10 +53,14 @@ const NftCard = ({id,image,ends,title}) => {
                     <span>#{id}</span>
                 </div>
                 <div className="card__infos">
-                    <div className="waiting__list">
-                        <span>Waiting List</span>
-                        <img src={peoples} alt="waiting list" />
-                    </div>
+                    {isMobile ? null : (
+                        <>
+                            <div className="waiting__list">
+                                <span>Waiting List</span>
+                                <img src={peoples} alt="waiting list" />
+                            </div>       
+                        </>
+                    )}
                     <div style={{marginTop:"16px"}}>
                         <Button title="Start Bid"/>
                     </div>

@@ -95,3 +95,23 @@
     font-size: 12px;
     }
 }
+
+@media screen and (max-width:1440px){
+    .collectors{
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    .collectors__gradient__position {
+        right: 0;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .topcollections__title {
+        text-align: center;
+    }
+}
+

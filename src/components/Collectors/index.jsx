@@ -3,6 +3,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import { profile1, profile2, profile3, profile4, profile5, profile6, profile7, profile8, profile9, profile10, profile11, profile12 } from "../../assets/import";
 import {Button,CollectorsCard} from "../import"
 import "./styles.css";
+import { useMediaQuery } from "react-responsive";
 
 
 const collectorsImg = [
@@ -24,6 +25,9 @@ const profiles = [
 
 
 const Collectors = () => {
+
+    const isMobile = useMediaQuery({maxWidth: 540});
+
     return (
         <>
             <div className="container">
@@ -58,7 +62,7 @@ const Collectors = () => {
                                         slidesPerView:3,
                                     },
                                     820: {
-                                        slidesPerView:2,
+                                        slidesPerView:3,
                                     },
                                     576: {
                                         slidesPerView:2
@@ -81,10 +85,12 @@ const Collectors = () => {
                         <CollectorsCard key={profile.id}{...profile}/>
                     ))}
                 </div>
-                <div className="collectors__gradient__position pink__gradient"/>
+                {isMobile ? null : (
+                    <>
+                        <div className="collectors__gradient__position pink__gradient"/>
+                    </>
+                )}
             </div>
-             
-
             </div>
         </>
     )

@@ -18,8 +18,8 @@
     }
 }
 
-@media screen and (max-width:912px) {
+@media screen and (max-width:1280px) {
     .nftcreates {
-        padding: 0 32px;
+        padding: 0 16px;
     }
 }
